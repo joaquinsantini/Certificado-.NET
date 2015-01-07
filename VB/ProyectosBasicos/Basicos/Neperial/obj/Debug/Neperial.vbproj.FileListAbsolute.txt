@@ -1,0 +1,8 @@
+c:\users\jsantini\documents\visual studio 2012\Projects\VBPrueba1\Neperial\bin\Debug\Neperial.exe
+c:\users\jsantini\documents\visual studio 2012\Projects\VBPrueba1\Neperial\bin\Debug\Neperial.pdb
+c:\users\jsantini\documents\visual studio 2012\Projects\VBPrueba1\Neperial\bin\Debug\Neperial.xml
+c:\users\jsantini\documents\visual studio 2012\Projects\VBPrueba1\Neperial\obj\Debug\Neperial.Resources.resources
+c:\users\jsantini\documents\visual studio 2012\Projects\VBPrueba1\Neperial\obj\Debug\Neperial.vbproj.GenerateResource.Cache
+c:\users\jsantini\documents\visual studio 2012\Projects\VBPrueba1\Neperial\obj\Debug\Neperial.exe
+c:\users\jsantini\documents\visual studio 2012\Projects\VBPrueba1\Neperial\obj\Debug\Neperial.xml
+c:\users\jsantini\documents\visual studio 2012\Projects\VBPrueba1\Neperial\obj\Debug\Neperial.pdb

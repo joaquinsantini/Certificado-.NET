@@ -1,0 +1,3 @@
+c:\users\jsantini\documents\visual studio 2012\Projects\VBPrueba1\VBPrueba1\obj\Debug\VBPrueba1.exe
+c:\users\jsantini\documents\visual studio 2012\Projects\VBPrueba1\VBPrueba1\obj\Debug\VBPrueba1.xml
+c:\users\jsantini\documents\visual studio 2012\Projects\VBPrueba1\VBPrueba1\obj\Debug\VBPrueba1.pdb
