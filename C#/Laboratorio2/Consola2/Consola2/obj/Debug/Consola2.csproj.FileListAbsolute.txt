@@ -1,0 +1,7 @@
+C:\Users\jsantini\Documents\Visual Studio 2012\Projects\Consola2\Consola\bin\Debug\Consola.exe
+C:\Users\jsantini\Documents\Visual Studio 2012\Projects\Consola2\Consola\bin\Debug\Consola.pdb
+C:\Users\jsantini\Documents\Visual Studio 2012\Projects\Consola2\Consola\bin\Debug\Entidades.dll
+C:\Users\jsantini\Documents\Visual Studio 2012\Projects\Consola2\Consola\bin\Debug\Entidades.pdb
+C:\Users\jsantini\Documents\Visual Studio 2012\Projects\Consola2\Consola\obj\Debug\Consola2.csprojResolveAssemblyReference.cache
+C:\Users\jsantini\Documents\Visual Studio 2012\Projects\Consola2\Consola\obj\Debug\Consola.exe
+C:\Users\jsantini\Documents\Visual Studio 2012\Projects\Consola2\Consola\obj\Debug\Consola.pdb
