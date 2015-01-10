@@ -1,0 +1,5 @@
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\Conversiones\bin\Debug\Conversiones.exe
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\Conversiones\bin\Debug\Conversiones.pdb
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\Conversiones\obj\Debug\Conversiones.csprojResolveAssemblyReference.cache
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\Conversiones\obj\Debug\Conversiones.exe
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\Conversiones\obj\Debug\Conversiones.pdb

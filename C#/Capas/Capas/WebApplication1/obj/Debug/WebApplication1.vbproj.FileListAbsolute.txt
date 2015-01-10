@@ -1,0 +1,11 @@
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\WebApplication1\bin\WebApplication1.dll
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\WebApplication1\bin\WebApplication1.pdb
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\WebApplication1\bin\WebApplication1.xml
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\WebApplication1\bin\Datos.dll
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\WebApplication1\bin\Datos.pdb
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\WebApplication1\obj\Debug\WebApplication1.vbprojResolveAssemblyReference.cache
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\WebApplication1\obj\Debug\WebApplication1.Resources.resources
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\WebApplication1\obj\Debug\WebApplication1.vbproj.GenerateResource.Cache
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\WebApplication1\obj\Debug\WebApplication1.dll
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\WebApplication1\obj\Debug\WebApplication1.xml
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\WebApplication1\obj\Debug\WebApplication1.pdb

@@ -1,0 +1,4 @@
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\Datos\bin\Debug\Datos.dll
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\Datos\bin\Debug\Datos.pdb
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\Datos\obj\Debug\Datos.dll
+c:\Users\educacionit\documents\visual studio 2012\Projects\Capas\Datos\obj\Debug\Datos.pdb
