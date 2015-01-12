@@ -1,7 +1,0 @@
-c:\users\jsantini\documents\visual studio 2012\Projects\Consola\Consola\bin\Debug\Consola.exe
-c:\users\jsantini\documents\visual studio 2012\Projects\Consola\Consola\bin\Debug\Consola.pdb
-c:\users\jsantini\documents\visual studio 2012\Projects\Consola\Consola\bin\Debug\Entidades.dll
-c:\users\jsantini\documents\visual studio 2012\Projects\Consola\Consola\bin\Debug\Entidades.pdb
-c:\users\jsantini\documents\visual studio 2012\Projects\Consola\Consola\obj\Debug\Consola.csprojResolveAssemblyReference.cache
-c:\users\jsantini\documents\visual studio 2012\Projects\Consola\Consola\obj\Debug\Consola.exe
-c:\users\jsantini\documents\visual studio 2012\Projects\Consola\Consola\obj\Debug\Consola.pdb

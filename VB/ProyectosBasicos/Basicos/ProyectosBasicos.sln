@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NumerosPrimos", "VBPrueba1\NumerosPrimos.vbproj", "{64D9B034-6D84-41A6-BC54-D3977DDC8E15}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NumerosPrimos", "NumerosPrimos\NumerosPrimos.vbproj", "{64D9B034-6D84-41A6-BC54-D3977DDC8E15}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Factorial", "ConsoleApplication1\Factorial.vbproj", "{A45031E2-3975-4DE4-AA94-C37E0BBD540B}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Factorial", "Factorial\Factorial.vbproj", "{A45031E2-3975-4DE4-AA94-C37E0BBD540B}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Neperial", "Neperial\Neperial.vbproj", "{745992E9-95B3-4120-8054-734370882ACB}"
 EndProject
