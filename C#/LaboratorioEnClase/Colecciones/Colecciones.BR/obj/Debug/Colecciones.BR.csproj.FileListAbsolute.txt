@@ -5,3 +5,10 @@ c:\users\educacionit\documents\visual studio 2012\Projects\Colecciones\Coleccion
 c:\users\educacionit\documents\visual studio 2012\Projects\Colecciones\Colecciones.BR\obj\Debug\Colecciones.BR.pdb
 c:\users\educacionit\documents\visual studio 2012\Projects\Colecciones\Colecciones.BR\bin\Debug\Entidades.dll
 c:\users\educacionit\documents\visual studio 2012\Projects\Colecciones\Colecciones.BR\bin\Debug\Entidades.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones.BR\bin\Debug\Colecciones.BR.dll
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones.BR\bin\Debug\Colecciones.BR.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones.BR\bin\Debug\Entidades.dll
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones.BR\bin\Debug\Entidades.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones.BR\obj\Debug\Colecciones.BR.csprojResolveAssemblyReference.cache
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones.BR\obj\Debug\Colecciones.BR.dll
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones.BR\obj\Debug\Colecciones.BR.pdb

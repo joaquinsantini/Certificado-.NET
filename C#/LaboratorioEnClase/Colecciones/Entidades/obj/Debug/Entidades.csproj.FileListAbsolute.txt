@@ -3,3 +3,8 @@ c:\users\educacionit\documents\visual studio 2012\Projects\Colecciones\Entidades
 c:\users\educacionit\documents\visual studio 2012\Projects\Colecciones\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 c:\users\educacionit\documents\visual studio 2012\Projects\Colecciones\Entidades\obj\Debug\Entidades.dll
 c:\users\educacionit\documents\visual studio 2012\Projects\Colecciones\Entidades\obj\Debug\Entidades.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Entidades\bin\Debug\Entidades.dll
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Entidades\bin\Debug\Entidades.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Entidades\obj\Debug\Entidades.dll
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Entidades\obj\Debug\Entidades.pdb

@@ -13,3 +13,18 @@ c:\users\educacionit\documents\visual studio 2012\Projects\Colecciones\Coleccion
 c:\users\educacionit\documents\visual studio 2012\Projects\Colecciones\Colecciones\obj\Debug\Colecciones.ListarProductos.resources
 c:\users\educacionit\documents\visual studio 2012\Projects\Colecciones\Colecciones\obj\Debug\Colecciones.AltaProducto.resources
 c:\users\educacionit\documents\visual studio 2012\Projects\Colecciones\Colecciones\obj\Debug\Colecciones.FrmConfiguracion.resources
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.exe
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\bin\Debug\Colecciones.exe
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\bin\Debug\Colecciones.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\bin\Debug\Colecciones.BR.dll
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\bin\Debug\Entidades.dll
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\bin\Debug\Colecciones.BR.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\bin\Debug\Entidades.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.csprojResolveAssemblyReference.cache
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.AltaProducto.resources
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.FrmConfiguracion.resources
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.ListarProductos.resources
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.MenuPrincipal.resources
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.Properties.Resources.resources
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.csproj.GenerateResource.Cache
