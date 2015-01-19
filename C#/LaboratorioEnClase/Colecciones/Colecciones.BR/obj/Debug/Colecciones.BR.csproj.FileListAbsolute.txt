@@ -12,3 +12,5 @@ C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones.BR\obj\Debug\Colecciones.BR.csprojResolveAssemblyReference.cache
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones.BR\obj\Debug\Colecciones.BR.dll
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones.BR\obj\Debug\Colecciones.BR.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones.BR\bin\Debug\Datos.dll
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones.BR\bin\Debug\Datos.pdb

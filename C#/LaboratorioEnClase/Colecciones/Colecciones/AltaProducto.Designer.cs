@@ -189,6 +189,7 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.margen);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "AltaProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Alta de Producto";

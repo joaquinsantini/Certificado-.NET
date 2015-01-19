@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{10258F28-7CE0-4CBB-8E03-BB2ECAC9BA53}</ProjectGuid>
+    <ProjectGuid>{BB99A66A-117E-4E67-8F5E-CED222BA19A7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Colecciones.BR</RootNamespace>
-    <AssemblyName>Colecciones.BR</AssemblyName>
+    <RootNamespace>Datos</RootNamespace>
+    <AssemblyName>Datos</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,16 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdmCategorias.cs" />
-    <Compile Include="AdmStock.cs" />
-    <Compile Include="Colecciones.cs" />
+    <Compile Include="SQL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Datos\Datos.csproj">
-      <Project>{bb99a66a-117e-4e67-8f5e-ced222ba19a7}</Project>
-      <Name>Datos</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{288cf148-28cb-43f9-81c5-1d8cc9813b30}</Project>
       <Name>Entidades</Name>

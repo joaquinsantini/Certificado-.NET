@@ -28,3 +28,6 @@ C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.MenuPrincipal.resources
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.Properties.Resources.resources
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.csproj.GenerateResource.Cache
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.Categorias.resources
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\bin\Debug\Datos.dll
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\bin\Debug\Datos.pdb
