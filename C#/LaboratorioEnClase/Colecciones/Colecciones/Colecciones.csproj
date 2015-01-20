@@ -62,6 +62,12 @@
     <Compile Include="FrmConfiguracion.Designer.cs">
       <DependentUpon>FrmConfiguracion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListarCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarCategorias.Designer.cs">
+      <DependentUpon>ListarCategorias.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListarProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConfiguracion.resx">
       <DependentUpon>FrmConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarCategorias.resx">
+      <DependentUpon>ListarCategorias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListarProductos.resx">
       <DependentUpon>ListarProductos.cs</DependentUpon>

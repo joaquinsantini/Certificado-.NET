@@ -48,12 +48,20 @@ namespace Colecciones
             formAltaProducto.ShowDialog();
         }
 
-        // Click en ítem de menú Categorías
+        // Click en ítem de menú Alta Categoría
         private void categoríasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Categorias formCategorias = new Categorias();
 
             formCategorias.ShowDialog();
+        }
+
+        // Click en ítem de menú Listar Categorías
+        private void listarCategoríasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListarCategorias formListarCategorias = new ListarCategorias();
+
+            formListarCategorias.ShowDialog();
         }
     }
 }

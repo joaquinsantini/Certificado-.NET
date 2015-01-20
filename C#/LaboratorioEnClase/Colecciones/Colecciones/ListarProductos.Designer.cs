@@ -35,6 +35,8 @@
             // 
             // GrillaProductos
             // 
+            this.GrillaProductos.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.GrillaProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GrillaProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GrillaProductos.Location = new System.Drawing.Point(13, 13);
             this.GrillaProductos.Name = "GrillaProductos";
