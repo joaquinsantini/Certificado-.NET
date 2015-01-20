@@ -62,6 +62,7 @@
             this.Controls.Add(this.GrillaProductos);
             this.Name = "ListarProductos";
             this.Text = "Listar Productos";
+            this.Load += new System.EventHandler(this.ListarProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrillaProductos)).EndInit();
             this.ResumeLayout(false);
 

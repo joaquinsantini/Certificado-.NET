@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Entidades;
+using Datos;
 
 namespace Colecciones.BR
 {
@@ -15,8 +16,11 @@ namespace Colecciones.BR
         /// <returns></returns>
         public List<Producto> GetAllProducts()
         {
-            // Lista a devolver
-            return Colecciones.Productos;
+            // Instancia de SQL
+            SQL osql = new SQL();
+
+            // Devuelvo la lista de productos
+            return osql.MostrarProductos();
         }
 
         /// <summary>

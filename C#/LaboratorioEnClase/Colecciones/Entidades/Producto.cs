@@ -10,7 +10,8 @@ namespace Entidades
         // ******************************************* Propiedades *******************************************
         public int Codigo { get; set; }
         public string Descripcion { get; set; }
-        public int PrecioCompra { get; set; }
-        public int PrecioVenta { get; set; }
+        public string Categoria { get; set; }
+        public double PrecioCompra { get; set; }
+        public double PrecioVenta { get; set; }
     }
 }

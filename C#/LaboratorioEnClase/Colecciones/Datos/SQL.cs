@@ -50,6 +50,10 @@ namespace Datos
             }
         }
 
+        /// <summary>
+        /// Crea una lista con las categorías de la BBDD y la devuelve para asignar a un DagaGridView.
+        /// </summary>
+        /// <returns></returns>
         public List<Entidades.Categorias> MostrarCategorias()
         {
             // Variables conexion y comando
@@ -100,6 +104,61 @@ namespace Datos
 
             // Devuelvo la lista de categorías
             return categorias;
+        }
+
+        public List<Entidades.Producto> MostrarProductos()
+        {
+            // Variables conexion y comando
+            SqlConnection conexion = new SqlConnection(connectionString);
+            SqlCommand comando = new SqlCommand("Productos_L", conexion);
+
+            // Variable categorias a devolver
+            List<Entidades.Producto> productos = new List<Entidades.Producto>();
+
+            // Asigno variables al comando
+            comando.CommandType = CommandType.StoredProcedure;
+
+            try
+            {
+                // Abro la conexión
+                conexion.Open();
+
+                // Ejecuto SP
+                SqlDataReader dataReader = comando.ExecuteReader();
+
+                // Mientras lea registros voy sumando cada categoría a la lista
+                while (dataReader.Read())
+                {
+                    // Nueva categoría
+                    Entidades.Producto producto = new Entidades.Producto();
+
+                    // Asigno valores
+                    producto.Codigo = Convert.ToInt32(dataReader["ProductoId"]);
+                    producto.Categoria = dataReader["Categoria"].ToString();
+                    producto.Descripcion = dataReader["Descripcion"].ToString();
+                    producto.PrecioCompra = Convert.ToDouble(dataReader["PrecioCompra"]);
+                    producto.PrecioVenta = Convert.ToDouble(dataReader["PrecioVenta"]);
+
+                    // Inserto ítem en la lista
+                    productos.Add(producto);
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Error en base de datos: " + ex.Message);
+            }
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
+                conexion.Dispose();
+                comando.Dispose();
+            }
+
+            // Devuelvo la lista de categorías
+            return productos;
         }
     }
 }

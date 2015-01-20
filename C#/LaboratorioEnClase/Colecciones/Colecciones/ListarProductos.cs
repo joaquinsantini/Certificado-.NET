@@ -13,15 +13,22 @@ namespace Colecciones
 {
     public partial class ListarProductos : Form
     {
+        // ******************************************* Constructor *****************************************
         public ListarProductos()
         {
             InitializeComponent();
-
-            AdmStock adminStock = new AdmStock();
-
-            GrillaProductos.DataSource = adminStock.GetAllProducts();
         }
 
+        // ******************************************* Load ************************************************
+        private void ListarProductos_Load(object sender, EventArgs e)
+        {
+            AdmStock admSt = new AdmStock();
+
+            GrillaProductos.DataSource = admSt.GetAllProducts();
+        }
+
+        // ******************************************* Métodos *********************************************
+        // Click al botón Cerrar
         private void Cerrar_Click(object sender, EventArgs e)
         {
             this.Close();
