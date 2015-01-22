@@ -10,18 +10,33 @@ GO
 -- Descripción: muestreo de tabla Categorias
 -- Fecha de creación: 19/01/2015
 CREATE PROCEDURE Productos_L
+	@Categoria		INT
 AS
 
 SET NOCOUNT ON
 
-SELECT	P.ProductoId		AS 'ProductoId',
-	C.Descripcion		AS 'Categoria',
-	P.Descripcion		AS 'Descripcion',
-	P.PrecioCompra		AS 'PrecioCompra',
-	P.PrecioVenta		AS 'PrecioVenta'
-	FROM	Productos P
-	INNER JOIN	Categorias C
-		ON	P.CategoriaId = C.CategoriaId
-
+IF (@Categoria <> 0)
+BEGIN
+	SELECT	P.ProductoId		AS 'ProductoId',
+		C.Descripcion		AS 'Categoria',
+		P.Descripcion		AS 'Descripcion',
+		P.PrecioCompra		AS 'PrecioCompra',
+		P.PrecioVenta		AS 'PrecioVenta',
+		P.FechaAlta		AS 'FechaAlta'
+		FROM	Productos P
+		INNER JOIN	Categorias C
+			ON	P.CategoriaId = C.CategoriaId
+		WHERE	P.CategoriaId = @Categoria
+END ELSE BEGIN
+	SELECT	P.ProductoId		AS 'ProductoId',
+		C.Descripcion		AS 'Categoria',
+		P.Descripcion		AS 'Descripcion',
+		P.PrecioCompra		AS 'PrecioCompra',
+		P.PrecioVenta		AS 'PrecioVenta',
+		P.FechaAlta		AS 'FechaAlta'
+		FROM	Productos P
+		INNER JOIN	Categorias C
+			ON	P.CategoriaId = C.CategoriaId
+END
 
 RETURN 0

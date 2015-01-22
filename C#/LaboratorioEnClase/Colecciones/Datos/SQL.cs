@@ -81,8 +81,8 @@ namespace Datos
                     Entidades.Categorias categoria = new Entidades.Categorias();
 
                     // Asigno valores
-                    categoria.Id = Convert.ToInt32(dataReader["Código de Categoría"]);
-                    categoria.Categoria = dataReader["Descripción"].ToString();
+                    categoria.Id = Convert.ToInt32(dataReader["CategoriaId"]);
+                    categoria.Categoria = dataReader["Descripcion"].ToString();
 
                     // Inserto ítem en la lista
                     categorias.Add(categoria);
@@ -106,7 +106,11 @@ namespace Datos
             return categorias;
         }
 
-        public List<Entidades.Producto> MostrarProductos()
+        /// <summary>
+        /// Devuelve la lista de productos.
+        /// </summary>
+        /// <returns></returns>
+        public List<Entidades.Producto> MostrarProductos(int cat)
         {
             // Variables conexion y comando
             SqlConnection conexion = new SqlConnection(connectionString);
@@ -117,7 +121,7 @@ namespace Datos
 
             // Asigno variables al comando
             comando.CommandType = CommandType.StoredProcedure;
-
+            comando.Parameters.Add("@Categoria", SqlDbType.Int).Value = cat;
             try
             {
                 // Abro la conexión
@@ -134,10 +138,11 @@ namespace Datos
 
                     // Asigno valores
                     producto.Codigo = Convert.ToInt32(dataReader["ProductoId"]);
-                    producto.Categoria = dataReader["Categoria"].ToString();
+                    producto.CategoriaDescripcion = dataReader["Categoria"].ToString();
                     producto.Descripcion = dataReader["Descripcion"].ToString();
                     producto.PrecioCompra = Convert.ToDouble(dataReader["PrecioCompra"]);
                     producto.PrecioVenta = Convert.ToDouble(dataReader["PrecioVenta"]);
+                    producto.FechaAlta = Convert.ToDateTime(dataReader["FechaAlta"]);
 
                     // Inserto ítem en la lista
                     productos.Add(producto);
@@ -159,6 +164,80 @@ namespace Datos
 
             // Devuelvo la lista de categorías
             return productos;
+        }
+
+        /// <summary>
+        /// Da de alta un producto.
+        /// </summary>
+        /// <param name="prod">
+        /// Objeto de clase Producto inicializado.
+        /// </param>
+        public void AltaProducto(Entidades.Producto prod)
+        {
+            // Variables conexion y comando
+            SqlConnection conexion = new SqlConnection(connectionString);
+            SqlCommand comando = new SqlCommand("Productos_A", conexion);
+
+            // Asigno variables al comando
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.Add("@ProductoId", SqlDbType.Int).Value = prod.Codigo;
+            comando.Parameters.Add("@Descripcion", SqlDbType.VarChar, 255).Value = prod.Descripcion;
+            comando.Parameters.Add("@PrecioCompra", SqlDbType.Float).Value = prod.PrecioCompra;
+            comando.Parameters.Add("@PrecioVenta", SqlDbType.Float).Value = prod.PrecioVenta;
+            comando.Parameters.Add("@Categoria", SqlDbType.Int).Value = prod.Categoria;
+            comando.Parameters.Add("@FechaAlta", SqlDbType.DateTime).Value = prod.FechaAlta;
+
+            try
+            {
+                conexion.Open();
+                comando.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Error en base de datos: " + ex.Message);
+            }
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
+                conexion.Dispose();
+                comando.Dispose();
+            }
+        }
+
+        public DataSet MostrarProductos2(int cat)
+        {
+            // Variables a utilizar
+            SqlConnection cnn = new SqlConnection(connectionString);
+            DataSet oDs = new DataSet();
+            SqlCommand cmd = new SqlCommand("Productos_L", cnn);
+
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter da = new SqlDataAdapter();
+
+            cmd.Parameters.Add("@Categoria", SqlDbType.Int).Value = cat;
+
+            da.SelectCommand = cmd;
+
+            try
+            {
+                da.Fill(oDs);
+
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Error en base de datos" + ex.Message);
+
+            }
+            finally
+            {
+                cnn.Dispose();
+                cmd.Dispose();
+            }
+
+            return oDs;
         }
     }
 }

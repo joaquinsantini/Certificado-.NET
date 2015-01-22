@@ -38,9 +38,9 @@
             this.GrillaProductos.BackgroundColor = System.Drawing.SystemColors.Control;
             this.GrillaProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GrillaProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GrillaProductos.Location = new System.Drawing.Point(13, 13);
+            this.GrillaProductos.Location = new System.Drawing.Point(12, 12);
             this.GrillaProductos.Name = "GrillaProductos";
-            this.GrillaProductos.Size = new System.Drawing.Size(515, 248);
+            this.GrillaProductos.Size = new System.Drawing.Size(516, 293);
             this.GrillaProductos.TabIndex = 0;
             // 
             // Cerrar

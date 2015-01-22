@@ -24,7 +24,12 @@ namespace Colecciones
         {
             AdmStock admSt = new AdmStock();
 
-            GrillaProductos.DataSource = admSt.GetAllProducts();
+            GrillaProductos.DataSource = admSt.GetAllProducts(0);
+            GrillaProductos.Columns.Remove("Categoria");
+            GrillaProductos.Columns[2].HeaderText = "Categoria";
+            GrillaProductos.Columns[3].HeaderText = "Precio de Compra";
+            GrillaProductos.Columns[4].HeaderText = "Precio de Venta";
+            GrillaProductos.Columns[5].HeaderText = "Fecha de Alta";
         }
 
         // ******************************************* Métodos *********************************************

@@ -22,5 +22,6 @@ CREATE TABLE Productos (
 	CategoriaId		INT FOREIGN KEY REFERENCES Categorias (CategoriaId),
 	Descripcion		VARCHAR(255) NOT NULL,
 	PrecioCompra		NUMERIC(31, 2),
-	PrecioVenta		NUMERIC(31, 2)
+	PrecioVenta		NUMERIC(31, 2),
+	FechaAlta		DATETIME
 )

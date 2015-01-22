@@ -13,6 +13,8 @@ namespace Colecciones
 {
     public partial class AltaProducto : Form
     {
+        AdmCategorias admCat = new AdmCategorias();
+
         // ******************************************* Constructor *******************************************
         public AltaProducto()
         {
@@ -24,6 +26,9 @@ namespace Colecciones
         {
             margen.Text = Convert.ToString(Configuracion.Margen);
             margen.ReadOnly = true;
+            cmbCategoria.DataSource = admCat.ConsultarCategorias();
+            cmbCategoria.ValueMember = "Id";
+            cmbCategoria.DisplayMember = "Categoria";
             txtDescripcion.Select();
         }
 
@@ -75,15 +80,6 @@ namespace Colecciones
                     return;
                 }
             }
-            
-            // Valido que el código de producto ingresado sea único
-            if (Colecciones.BR.Colecciones.Productos.Find(x => x.Codigo == Convert.ToInt32(txtCodigo.Text)) != null)
-            {
-                MessageBox.Show("Ya existe un producto con el código ingresado. Por favor ingrese otro código de producto para continuar.");
-                txtCodigo.Select();
-                txtCodigo.SelectAll();
-                return;
-            }
 
             // Instancia de producto
             Producto producto = new Producto();
@@ -92,17 +88,15 @@ namespace Colecciones
             producto.Codigo = Convert.ToInt32(txtCodigo.Text);
             producto.Descripcion = txtDescripcion.Text;
             producto.PrecioCompra = Convert.ToInt32(txtPrecioCompra.Text);
+            producto.Categoria = Convert.ToInt32(cmbCategoria.SelectedValue);
+            producto.FechaAlta = Convert.ToDateTime(fechaAlta.Text);
 
             // Doy de alta el producto
-            AdmStock.altaProducto(producto);
+            AdmStock admSto = new AdmStock();
+            admSto.altaProducto(producto);
 
             // Informo el alta de producto
             MessageBox.Show("Producto " + producto.Descripcion + " dado de alta con éxito.");
-
-            // Actualizo la grilla
-            labelInformacion.Visible = false;
-            Grilla1.DataSource = null;
-            Grilla1.DataSource = Colecciones.BR.Colecciones.Productos;
 
             // Limpio campos
             txtPrecioCompra.Text = "";

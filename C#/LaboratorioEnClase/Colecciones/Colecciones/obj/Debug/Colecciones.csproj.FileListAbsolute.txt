@@ -32,3 +32,4 @@ C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\bin\Debug\Datos.dll
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\bin\Debug\Datos.pdb
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.ListarCategorias.resources
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.ListarProductosPorCategoria.resources

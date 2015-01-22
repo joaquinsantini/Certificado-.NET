@@ -14,8 +14,8 @@ AS
 
 SET NOCOUNT ON
 
-SELECT	CategoriaId		AS 'Código de Categoría',
-	Descripcion		AS 'Descripción'
+SELECT	CategoriaId		AS 'CategoriaId',
+	Descripcion		AS 'Descripcion'
 	FROM	Categorias
 
 

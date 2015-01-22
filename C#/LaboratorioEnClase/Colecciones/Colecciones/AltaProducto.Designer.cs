@@ -40,9 +40,10 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtPrecioCompra = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.Grilla1 = new System.Windows.Forms.DataGridView();
-            this.labelInformacion = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.Grilla1)).BeginInit();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.fechaAlta = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -60,6 +61,7 @@
             this.margen.Name = "margen";
             this.margen.Size = new System.Drawing.Size(60, 20);
             this.margen.TabIndex = 1;
+            this.margen.TabStop = false;
             // 
             // btnAceptar
             // 
@@ -67,7 +69,7 @@
             this.btnAceptar.Location = new System.Drawing.Point(149, 295);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptar.TabIndex = 2;
+            this.btnAceptar.TabIndex = 5;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -77,7 +79,7 @@
             this.btnLimpiar.Location = new System.Drawing.Point(12, 295);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpiar.TabIndex = 3;
+            this.btnLimpiar.TabIndex = 7;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
@@ -87,7 +89,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(230, 295);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 4;
+            this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -124,21 +126,21 @@
             this.txtDescripcion.Location = new System.Drawing.Point(112, 68);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(193, 20);
-            this.txtDescripcion.TabIndex = 8;
+            this.txtDescripcion.TabIndex = 1;
             // 
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(112, 94);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigo.TabIndex = 9;
+            this.txtCodigo.TabIndex = 2;
             // 
             // txtPrecioCompra
             // 
             this.txtPrecioCompra.Location = new System.Drawing.Point(112, 120);
             this.txtPrecioCompra.Name = "txtPrecioCompra";
             this.txtPrecioCompra.Size = new System.Drawing.Size(100, 20);
-            this.txtPrecioCompra.TabIndex = 10;
+            this.txtPrecioCompra.TabIndex = 3;
             // 
             // label5
             // 
@@ -150,33 +152,50 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "(Valor numérico)";
             // 
-            // Grilla1
+            // label6
             // 
-            this.Grilla1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.Grilla1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Grilla1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Grilla1.Location = new System.Drawing.Point(15, 146);
-            this.Grilla1.Name = "Grilla1";
-            this.Grilla1.Size = new System.Drawing.Size(290, 143);
-            this.Grilla1.TabIndex = 12;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(49, 175);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Categoría:";
             // 
-            // labelInformacion
+            // cmbCategoria
             // 
-            this.labelInformacion.AutoSize = true;
-            this.labelInformacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInformacion.Location = new System.Drawing.Point(15, 146);
-            this.labelInformacion.Name = "labelInformacion";
-            this.labelInformacion.Size = new System.Drawing.Size(297, 15);
-            this.labelInformacion.TabIndex = 13;
-            this.labelInformacion.Text = "(Dar de alta un producto para visualizar los cambios.)";
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Location = new System.Drawing.Point(112, 172);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(100, 21);
+            this.cmbCategoria.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(30, 149);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(76, 13);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Fecha de Alta:";
+            // 
+            // fechaAlta
+            // 
+            this.fechaAlta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fechaAlta.Location = new System.Drawing.Point(112, 146);
+            this.fechaAlta.Name = "fechaAlta";
+            this.fechaAlta.Size = new System.Drawing.Size(100, 20);
+            this.fechaAlta.TabIndex = 4;
+            this.fechaAlta.Value = new System.DateTime(2015, 1, 21, 20, 9, 9, 0);
             // 
             // AltaProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(317, 330);
-            this.Controls.Add(this.labelInformacion);
-            this.Controls.Add(this.Grilla1);
+            this.Controls.Add(this.fechaAlta);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cmbCategoria);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtPrecioCompra);
             this.Controls.Add(this.txtCodigo);
@@ -194,7 +213,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Alta de Producto";
             this.Load += new System.EventHandler(this.AltaProducto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Grilla1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,7 +232,9 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.TextBox txtPrecioCompra;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView Grilla1;
-        private System.Windows.Forms.Label labelInformacion;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DateTimePicker fechaAlta;
     }
 }

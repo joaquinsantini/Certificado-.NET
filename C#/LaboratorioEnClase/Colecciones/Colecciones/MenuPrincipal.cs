@@ -63,5 +63,13 @@ namespace Colecciones
 
             formListarCategorias.ShowDialog();
         }
+
+        // Click en ítem de menú Listar Productos por Categoría
+        private void listarProductosPorCategoríaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListarProductosPorCategoria formListarProductosPorCategoria = new ListarProductosPorCategoria();
+
+            formListarProductosPorCategoria.ShowDialog();
+        }
     }
 }

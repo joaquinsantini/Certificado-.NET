@@ -74,6 +74,12 @@
     <Compile Include="ListarProductos.Designer.cs">
       <DependentUpon>ListarProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListarProductosPorCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarProductosPorCategoria.Designer.cs">
+      <DependentUpon>ListarProductosPorCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListarProductos.resx">
       <DependentUpon>ListarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarProductosPorCategoria.resx">
+      <DependentUpon>ListarProductosPorCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>

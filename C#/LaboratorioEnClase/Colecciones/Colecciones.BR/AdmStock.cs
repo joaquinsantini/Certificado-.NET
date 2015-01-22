@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 using Entidades;
 using Datos;
 
@@ -14,13 +15,22 @@ namespace Colecciones.BR
         /// Retorna una lista con todos los productos.
         /// </summary>
         /// <returns></returns>
-        public List<Producto> GetAllProducts()
+        public List<Producto> GetAllProducts(int cat)
         {
             // Instancia de SQL
             SQL osql = new SQL();
 
             // Devuelvo la lista de productos
-            return osql.MostrarProductos();
+            return osql.MostrarProductos(cat);
+        }
+
+        public DataSet GetAllProducts2(int cat)
+        {
+            // Instancia de SQL
+            SQL osql = new SQL();
+
+            // Devuelvo la lista de productos
+            return osql.MostrarProductos2(cat);
         }
 
         /// <summary>
@@ -29,10 +39,16 @@ namespace Colecciones.BR
         /// <param name="prod">
         /// Producto a dar de alta.
         /// </param>
-        public static void altaProducto(Producto prod)
+        public void altaProducto(Producto prod)
         {
+            // Asigno valor de precio de venta
             prod.PrecioVenta = prod.PrecioCompra * Configuracion.Margen;
-            Colecciones.Productos.Add(prod);
+
+            // Instancia de SQL
+            SQL osql = new SQL();
+
+            // Doy de alta el producto
+            osql.AltaProducto(prod);
         }
     }
 }
