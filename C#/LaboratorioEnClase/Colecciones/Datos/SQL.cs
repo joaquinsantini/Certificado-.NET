@@ -207,6 +207,11 @@ namespace Datos
             }
         }
 
+        /// <summary>
+        /// Devuelve la lista de productos.
+        /// </summary>
+        /// <param name="cat"></param>
+        /// <returns></returns>
         public DataSet MostrarProductos2(int cat)
         {
             // Variables a utilizar
@@ -218,6 +223,75 @@ namespace Datos
             SqlDataAdapter da = new SqlDataAdapter();
 
             cmd.Parameters.Add("@Categoria", SqlDbType.Int).Value = cat;
+
+            da.SelectCommand = cmd;
+
+            try
+            {
+                da.Fill(oDs);
+
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Error en base de datos" + ex.Message);
+
+            }
+            finally
+            {
+                cnn.Dispose();
+                cmd.Dispose();
+            }
+
+            return oDs;
+        }
+
+        /// <summary>
+        /// Da de alta una cotización.
+        /// </summary>
+        /// <param name="especie"></param>
+        /// <param name="fecha"></param>
+        /// <param name="cotizacion"></param>
+        public void AltaCotizaciones(string especie, DateTime fecha, decimal cotizacion)
+        {
+            // Variables conexion y comando
+            SqlConnection conexion = new SqlConnection(connectionString);
+            SqlCommand comando = new SqlCommand("Cotizaciones_A", conexion);
+
+            // Asigno variables al comando
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.Add("@Especie", SqlDbType.VarChar, 50).Value = especie;
+            comando.Parameters.Add("@Fecha", SqlDbType.SmallDateTime).Value = fecha;
+            comando.Parameters.Add("@Cotizacion", SqlDbType.Decimal).Value = cotizacion;
+
+            try
+            {
+                conexion.Open();
+                comando.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Error en base de datos: " + ex.Message);
+            }
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
+                conexion.Dispose();
+                comando.Dispose();
+            }
+        }
+
+        public DataSet Analisis()
+        {
+            // Variables a utilizar
+            SqlConnection cnn = new SqlConnection(connectionString);
+            DataSet oDs = new DataSet();
+            SqlCommand cmd = new SqlCommand("Analisis_L", cnn);
+
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter da = new SqlDataAdapter();
 
             da.SelectCommand = cmd;
 

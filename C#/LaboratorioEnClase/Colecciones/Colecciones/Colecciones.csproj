@@ -50,6 +50,12 @@
     <Compile Include="AltaProducto.Designer.cs">
       <DependentUpon>AltaProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Analisis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analisis.Designer.cs">
+      <DependentUpon>Analisis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Categorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,12 @@
     </Compile>
     <Compile Include="FrmConfiguracion.Designer.cs">
       <DependentUpon>FrmConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportarArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportarArchivo.Designer.cs">
+      <DependentUpon>ImportarArchivo.cs</DependentUpon>
     </Compile>
     <Compile Include="ListarCategorias.cs">
       <SubType>Form</SubType>
@@ -91,11 +103,17 @@
     <EmbeddedResource Include="AltaProducto.resx">
       <DependentUpon>AltaProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Analisis.resx">
+      <DependentUpon>Analisis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Categorias.resx">
       <DependentUpon>Categorias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConfiguracion.resx">
       <DependentUpon>FrmConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportarArchivo.resx">
+      <DependentUpon>ImportarArchivo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListarCategorias.resx">
       <DependentUpon>ListarCategorias.cs</DependentUpon>

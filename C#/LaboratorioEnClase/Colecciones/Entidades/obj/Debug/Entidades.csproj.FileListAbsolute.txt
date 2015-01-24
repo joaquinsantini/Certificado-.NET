@@ -7,3 +7,4 @@ C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Entidades\bin\Debug\Entidades.pdb
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Entidades\obj\Debug\Entidades.dll
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Entidades\obj\Debug\Entidades.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache

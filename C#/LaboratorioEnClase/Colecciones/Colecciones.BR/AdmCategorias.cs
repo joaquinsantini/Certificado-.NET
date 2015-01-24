@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Entidades;
 using Datos;
+using System.Data;
 
 namespace Colecciones.BR
 {

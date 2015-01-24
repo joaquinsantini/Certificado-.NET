@@ -35,8 +35,10 @@
             this.altaProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoríasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarCategoríasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarProductosPorCategoríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importarArchivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.analisisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +61,9 @@
             this.altaProductoToolStripMenuItem,
             this.categoríasToolStripMenuItem,
             this.listarCategoríasToolStripMenuItem,
-            this.listarProductosPorCategoríaToolStripMenuItem});
+            this.listarProductosPorCategoríaToolStripMenuItem,
+            this.importarArchivoToolStripMenuItem,
+            this.analisisToolStripMenuItem});
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
             this.productosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.productosToolStripMenuItem.Text = "Productos";
@@ -99,6 +103,20 @@
             this.listarCategoríasToolStripMenuItem.Text = "Listar Categorías";
             this.listarCategoríasToolStripMenuItem.Click += new System.EventHandler(this.listarCategoríasToolStripMenuItem_Click);
             // 
+            // listarProductosPorCategoríaToolStripMenuItem
+            // 
+            this.listarProductosPorCategoríaToolStripMenuItem.Name = "listarProductosPorCategoríaToolStripMenuItem";
+            this.listarProductosPorCategoríaToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.listarProductosPorCategoríaToolStripMenuItem.Text = "Listar Productos Por Categoría";
+            this.listarProductosPorCategoríaToolStripMenuItem.Click += new System.EventHandler(this.listarProductosPorCategoríaToolStripMenuItem_Click);
+            // 
+            // importarArchivoToolStripMenuItem
+            // 
+            this.importarArchivoToolStripMenuItem.Name = "importarArchivoToolStripMenuItem";
+            this.importarArchivoToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.importarArchivoToolStripMenuItem.Text = "Importar Archivo";
+            this.importarArchivoToolStripMenuItem.Click += new System.EventHandler(this.importarArchivoToolStripMenuItem_Click);
+            // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
@@ -106,12 +124,12 @@
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
-            // listarProductosPorCategoríaToolStripMenuItem
+            // analisisToolStripMenuItem
             // 
-            this.listarProductosPorCategoríaToolStripMenuItem.Name = "listarProductosPorCategoríaToolStripMenuItem";
-            this.listarProductosPorCategoríaToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.listarProductosPorCategoríaToolStripMenuItem.Text = "Listar Productos Por Categoría";
-            this.listarProductosPorCategoríaToolStripMenuItem.Click += new System.EventHandler(this.listarProductosPorCategoríaToolStripMenuItem_Click);
+            this.analisisToolStripMenuItem.Name = "analisisToolStripMenuItem";
+            this.analisisToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.analisisToolStripMenuItem.Text = "Analisis";
+            this.analisisToolStripMenuItem.Click += new System.EventHandler(this.analisisToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
@@ -141,5 +159,7 @@
         private System.Windows.Forms.ToolStripMenuItem categoríasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarCategoríasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarProductosPorCategoríaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importarArchivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem analisisToolStripMenuItem;
     }
 }

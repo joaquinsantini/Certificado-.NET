@@ -7,7 +7,7 @@ END
 
 GO
 -- HISTORIAL
--- Descripción: alta de producto en tabla Productos
+-- Descripción: alta de producto en tabla Productos.
 -- Fecha de creación: 21/01/2015
 CREATE PROCEDURE Productos_A
 	@ProductoId		INT,

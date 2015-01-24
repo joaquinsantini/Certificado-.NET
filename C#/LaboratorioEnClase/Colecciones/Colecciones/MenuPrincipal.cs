@@ -71,5 +71,21 @@ namespace Colecciones
 
             formListarProductosPorCategoria.ShowDialog();
         }
+
+        // Click en ítem de menú Importar Archivo
+        private void importarArchivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ImportarArchivo formImportarArchivo = new ImportarArchivo();
+
+            formImportarArchivo.ShowDialog();
+        }
+
+        // Click en ítem de menú Analisis
+        private void analisisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Analisis formAnalisis = new Analisis();
+
+            formAnalisis.ShowDialog();
+        }
     }
 }
