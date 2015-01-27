@@ -60,6 +60,13 @@ namespace Colecciones
         // Click al botón Aceptar
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            // Verifico que se haya ingresado un archivo
+            if (txtArchivo.Text == "Seleccione un archivo de texto")
+            {
+                MessageBox.Show("Seleccione un archivo de texto para realizar la importación.");
+                return;
+            }
+
             using (StreamReader reader = new StreamReader(txtArchivo.Text))
             {
                 // Variables para leer las lineas del archivo
@@ -72,10 +79,18 @@ namespace Colecciones
                 string _dia = "";
                 string _mes = "";
                 string _anio = "";
+                int cantidadLineas = 0;
+                StringBuilder osb = new StringBuilder();
+                StreamWriter osw = new StreamWriter("C:\\log.txt", true);
 
                 // Loop para el parseo cada linea del archivo
                 while ((linea = reader.ReadLine()) != null)
                 {
+                    // Guardo la linea leída
+                    osb.Append(linea);
+                    osb.Append(Environment.NewLine);
+                    cantidadLineas++;
+
                     // Valores separados de la linea
                     string[] valores = linea.Split('|');
                     
@@ -92,9 +107,21 @@ namespace Colecciones
                     AdmCotizaciones.AltaCotizaciones(_especie, fecha, Convert.ToDecimal(_cotizacion));
                 }
 
-
                 // Informo la importación exitosa
-                MessageBox.Show("La importación se realizó con éxito.");
+                MessageBox.Show("Se importaron " + cantidadLineas.ToString() + " registros con éxito.");
+
+                // Logueo importación
+                osw.WriteLine("Se importaron " + cantidadLineas.ToString() + " registros con éxito.");
+                osw.WriteLine("Fecha de la importación: " + DateTime.Now.ToShortDateString());
+                osw.WriteLine("Hora de la importación: " + DateTime.Now.ToShortTimeString());
+                osw.WriteLine("Usuario que realizó la importación: " + Environment.UserName.ToString());
+                osw.WriteLine();
+                osw.Close();
+
+                // Muestro las cotizaciones importadas
+                this.Height = 580;
+                txtCotizaciones.Text = osb.ToString();
+                txtCotizaciones.ScrollBars = ScrollBars.Horizontal;
             }
         }
     }

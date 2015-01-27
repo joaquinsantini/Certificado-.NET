@@ -17,7 +17,7 @@ namespace Colecciones
             InitializeComponent();
         }
 
-        // ******************************************* Métodos *******************************************
+        // ******************************************* Métodos ***********************************************
         // Click en ítem de menú Listar Productos
         private void listarProductosToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -86,6 +86,14 @@ namespace Colecciones
             Analisis formAnalisis = new Analisis();
 
             formAnalisis.ShowDialog();
+        }
+
+        // Click en ítem de menú Listados
+        private void listadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Listados formListados = new Listados();
+
+            formListados.ShowDialog();
         }
     }
 }

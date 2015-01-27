@@ -33,6 +33,7 @@
             this.btnSeleccionarArchivo = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
+            this.txtCotizaciones = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -83,12 +84,23 @@
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
+            // txtCotizaciones
+            // 
+            this.txtCotizaciones.Location = new System.Drawing.Point(13, 82);
+            this.txtCotizaciones.Multiline = true;
+            this.txtCotizaciones.Name = "txtCotizaciones";
+            this.txtCotizaciones.ReadOnly = true;
+            this.txtCotizaciones.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtCotizaciones.Size = new System.Drawing.Size(433, 455);
+            this.txtCotizaciones.TabIndex = 4;
+            // 
             // ImportarArchivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(458, 88);
+            this.ClientSize = new System.Drawing.Size(458, 82);
             this.ControlBox = false;
+            this.Controls.Add(this.txtCotizaciones);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSeleccionarArchivo);
@@ -96,7 +108,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "ImportarArchivo";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Importar Archivo";
             this.Load += new System.EventHandler(this.ImportarArchivo_Load);
             this.ResumeLayout(false);
@@ -111,5 +123,6 @@
         private System.Windows.Forms.Button btnSeleccionarArchivo;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.TextBox txtCotizaciones;
     }
 }

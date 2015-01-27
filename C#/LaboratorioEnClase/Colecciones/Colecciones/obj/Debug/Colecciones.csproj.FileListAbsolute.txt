@@ -35,3 +35,6 @@ C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.ListarProductosPorCategoria.resources
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.ImportarArchivo.resources
 C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.Analisis.resources
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\Colecciones.Listados.resources
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\RdlCompile.cache
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\Colecciones\obj\Debug\RdlCompile.compiled
