@@ -1,0 +1,12 @@
+c:\users\educacionit\documents\visual studio 2012\Projects\ConsultaWeb\ConsultaWeb\bin\Debug\ConsultaWeb.exe.config
+C:\Users\educacionit\Documents\Visual Studio 2012\Projects\ConsultaWeb\ConsultaWeb\bin\Debug\ConsultaWeb.exe
+C:\Users\educacionit\Documents\Visual Studio 2012\Projects\ConsultaWeb\ConsultaWeb\bin\Debug\ConsultaWeb.pdb
+C:\Users\educacionit\Documents\Visual Studio 2012\Projects\ConsultaWeb\ConsultaWeb\bin\Debug\Colecciones.BR.dll
+C:\Users\educacionit\Documents\Visual Studio 2012\Projects\ConsultaWeb\ConsultaWeb\bin\Debug\Datos.dll
+C:\Users\educacionit\Documents\Visual Studio 2012\Projects\ConsultaWeb\ConsultaWeb\bin\Debug\Entidades.dll
+C:\Users\educacionit\Documents\Visual Studio 2012\Projects\ConsultaWeb\ConsultaWeb\obj\Debug\ConsultaWeb.csprojResolveAssemblyReference.cache
+C:\Users\educacionit\Documents\Visual Studio 2012\Projects\ConsultaWeb\ConsultaWeb\obj\Debug\ConsultaWeb.Form1.resources
+C:\Users\educacionit\Documents\Visual Studio 2012\Projects\ConsultaWeb\ConsultaWeb\obj\Debug\ConsultaWeb.Properties.Resources.resources
+C:\Users\educacionit\Documents\Visual Studio 2012\Projects\ConsultaWeb\ConsultaWeb\obj\Debug\ConsultaWeb.csproj.GenerateResource.Cache
+C:\Users\educacionit\Documents\Visual Studio 2012\Projects\ConsultaWeb\ConsultaWeb\obj\Debug\ConsultaWeb.exe
+C:\Users\educacionit\Documents\Visual Studio 2012\Projects\ConsultaWeb\ConsultaWeb\obj\Debug\ConsultaWeb.pdb

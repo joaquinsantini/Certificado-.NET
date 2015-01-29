@@ -208,6 +208,59 @@ namespace Datos
         }
 
         /// <summary>
+        /// Modifica o elimina un producto existente en la base.
+        /// </summary>
+        /// <param name="codigo">
+        /// Código del producto a modificar o eliminar
+        /// </param>
+        public void ModificarProducto(Entidades.Producto prod, int flagBaja)
+        {
+            // Variables conexion y comando
+            SqlConnection conexion = new SqlConnection(connectionString);
+            SqlCommand comando;
+
+            if (flagBaja == 0)
+            {
+                comando = new SqlCommand("Productos_M", conexion);
+            }
+            else
+            {
+                comando = new SqlCommand("Productos_B", conexion);
+            }
+
+            // Asigno variables al comando
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.Add("@ProductoId", SqlDbType.Int).Value = prod.Codigo;
+
+            if (flagBaja == 0)
+            {
+                comando.Parameters.Add("@Descripcion", SqlDbType.VarChar, 255).Value = prod.Descripcion;
+                comando.Parameters.Add("@PrecioCompra", SqlDbType.Float).Value = prod.PrecioCompra;
+                comando.Parameters.Add("@PrecioVenta", SqlDbType.Float).Value = prod.PrecioVenta;
+                comando.Parameters.Add("@Categoria", SqlDbType.Int).Value = prod.Categoria;
+            }
+
+            try
+            {
+                conexion.Open();
+                comando.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Error en base de datos: " + ex.Message);
+            }
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
+                conexion.Dispose();
+                comando.Dispose();
+            }
+        }
+
+        /// <summary>
         /// Devuelve la lista de productos.
         /// </summary>
         /// <param name="cat"></param>

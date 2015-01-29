@@ -1,0 +1,11 @@
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\SitioWeb\bin\SitioWeb.dll
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\SitioWeb\bin\SitioWeb.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\SitioWeb\bin\Colecciones.BR.dll
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\SitioWeb\bin\Entidades.dll
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\SitioWeb\bin\Datos.dll
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\SitioWeb\bin\Colecciones.BR.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\SitioWeb\bin\Entidades.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\SitioWeb\bin\Datos.pdb
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\SitioWeb\obj\Debug\SitioWeb.csprojResolveAssemblyReference.cache
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\SitioWeb\obj\Debug\SitioWeb.dll
+C:\Users\educacionit\Desktop\Certificado-.NET\C#\LaboratorioEnClase\Colecciones\SitioWeb\obj\Debug\SitioWeb.pdb

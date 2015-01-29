@@ -50,5 +50,14 @@ namespace Colecciones.BR
             // Doy de alta el producto
             osql.AltaProducto(prod);
         }
+
+        public void modificarProducto(Producto prod)
+        {
+            // Instancia de SQL
+            SQL osql = new SQL();
+
+            // Modifico el producto
+            osql.ModificarProducto(prod, 0);
+        }
     }
 }
